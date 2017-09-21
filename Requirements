@@ -1,0 +1,65 @@
+Software Requirements Specifications (SRS)
+for Contact Manager
+Definitions, Abbreviations, and Acronyms
+SMS	Short Message Service (Text message)
+
+Functional Requirements
+1.	Users should be allowed to view contacts
+1.1	The system's default page should be a view of all contacts	 	vertically, starting in alphabetical order.
+1.2 	Users can scroll down to see more contacts.
+1.3	Users should no longer be able to scroll down at the end of 	the list.
+1.4 	Users should no longer be able to scroll up at the top of 	the list. 
+2.	Users should be able to click on a contact to open a prompt with options
+2.1 	Users should be prompted to call, send SMS, edit, or delete 	contact that was clicked on.
+2.2 	Users should be able to cancel from the prompt and return by 	clicking a "Cancel" button
+3.	Default phone calling application should launch and call phone selected number if user chooses to call from prompt.
+3.1 	Phone call is placed only once when the user clicks "Call"
+3.2	Contact Management App is minimized while the user's 	default phone calling app runs over it. 
+4.	Default SMS app should be launched with the selected phone number as the recipient.
+4.1 	Contact Management App is minimized while the user's
+	default texting app runs over it.
+5.	Users should be able to edit a contact's phone number, name, or picture when "Edit" is clicked.
+5.1	Two textboxes should be displayed with an editable string, 
+	the first being name and the second being phone number.
+5.2	Users should be able to click on any of these strings and 	edit.
+5.3	An image view should be displayed of the contact's image and 	the user should be able to click on a "Change Picture" 	button. 
+5.4	If user clicks on "Change Picture", a gallery of their 	images should be opened and they should be able to select the 	new photo.
+5.5	When user selects a new photo after they choose to edit, it 	should return to the "Edit" page with the new photo as the 	contact image.
+5.6	Users should be able to save their work by clicking a 	"Save" button which saves the changes and returns to the 	contact viewer.
+5.7	The system should not allow users to enter letters in the 	phone number textbox and should prompt the user to enter a 	proper phone number before taking them back to the "Edit" 	page.
+6.	Users should be able to delete a contact by clicking the "Delete" button after clicking on a name.
+6.1	User should be prompted if they are sure they would like to 	delete the contact with "Yes" and "No" button.
+6.2	If user clicks "Yes", delete the contact from the database 	and return to contact viewer.
+6.3	If user clicks "No", return to the prompt that allows users 
+	to call, text, edit, or delete.
+7.	Users should be able to add other contacts to their list
+7.1 	Users can add contacts by clicking an "Add Contact" button. 
+7.2 	Users should be prompted for name & phone number of new 	contact.
+7.3	The system should not allow the user to enter letters as a
+	phone number, informing the user before returning to the 	prompt for name and phone number. 
+7.4 	Users should be able to cancel and return to original page 	by clicking "Cancel".	
+8.	Users shall be allowed to filter through their contacts using the search function.
+8.1	The system shall allow the user to input numbers, letters,      
+	Or symbols into the search bar.
+8.2	The system shall display the contacts whose name contain	the Searched keyword while still being in alphabetical 	order.
+8.3	The system shall display “no matches found” if no results 	were returned.
+9. The “remove duplicates” function shall allow users to remove 		multiple contacts with the same information.
+	9.1	The system will search and remove all contacts with both 			similar contact name and number.
+	9.2	The system shall display located contacts and prompt user
+		For removal.
+	9.3 	The system shall notify the user If no duplicates were 			found.
+
+10. The Black List should allow the user to choose which contacts to not receive their calls or texts.
+10.1	The Black List will function as a group within the contact list.
+10.2 The system will allow the user to add and remove contacts.
+10.3 Blacklist will communicate with the phone and SMS apps to ensure notifications are redirected.
+
+11. The system will allow for exporting and importing of contact        lists.
+	11.1 The importing option will sync first and last names with the provided phone numbers automatically creating contacts.
+	11.2 The exporting option will export the raw data ordered by first name, last name, and phone number.
+	11.3 Users will be provided with an export one contact option to easily share via email or sms. 
+
+
+Use Case Diagram:
+
+ 
